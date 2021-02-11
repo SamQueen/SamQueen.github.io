@@ -325,7 +325,7 @@ nav.black ul li a{
     }
     
     #about {
-        height: 100vh;
+        height: 150vh;
     }
     
     
@@ -333,9 +333,6 @@ nav.black ul li a{
         height: 75vh;
     }
     
-    .contact-items ul {
-        
-    }
     
     .contact-items ul li a {
         margin: 15px;
