@@ -55,6 +55,16 @@ nav ul li {
     cursor: pointer;
 }
 
+nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: blue;
+    transition: 0.5s ease;
+}
 
 /*Title Section*/
 #title {
@@ -211,7 +221,7 @@ nav ul li {
     background-color: #262626;/*A lighter black*/
     color: #fff;
     padding: 5% 7%;
-    height: 45vh;
+    height: 35vh;
 }
 
 .contact-me {
@@ -221,7 +231,7 @@ nav ul li {
 .contact-items {
     width: 50vw;
     position: relative;
-    margin: 170px 0;
+    margin: 80px 0;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s ease;
@@ -307,17 +317,33 @@ nav ul li {
     }
     
     #about {
-        height: 150vh;
+        height: 200vh;
     }
     
+    .tech {
+        font-size: 1em;
+    }
+    
+    .tech ul li {
+        margin-right: 40px;
+    }
     
     #contact {
-        height: 75vh;
+        height: 100vh;
     }
     
     
-    .contact-items ul li a {
-        margin: 15px;
+    .contact-items {
+        
+    }
+    
+    .contact-items ul {
+        display: block;
+        left: 50%;
+    }
+    
+    .contact-items ul li {
+        margin-top: 20px;
     }
 }
 
