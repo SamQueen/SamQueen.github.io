@@ -1,0 +1,333 @@
+/*Fonts*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+a {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p {
+    color: #686868;
+}
+
+
+/*nav*/
+nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    color: #ffff;
+    height: 12vh;
+    z-index: 3;
+    transition: 0.5s ease;
+}
+
+nav.black {
+    background-color: #171719;
+    height: 10vh;
+    transition: 0.5s ease;
+}
+
+nav h1 {
+    margin-left: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+nav ul li {
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+
+/*Title Section*/
+#title {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(150, 0, 0, 0.52), rgba(0, 0, 0, 1)), url('../images/nature.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    padding: 20%;
+    color: #ffff;
+    position: relative;
+    letter-spacing: .15rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 5rem;
+
+}
+
+.header h3 {
+    font-size: 3rem;
+}
+
+
+/*About Section*/
+#about {
+    min-height: 80vh;
+    padding: 7%;
+    margin: 5% 15% 5% 15%;
+    text-align: center;
+}
+
+
+.profile {
+    margin-top: 12%;
+}
+
+.profile p {
+    margin-top: 30px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.profile img {
+    border-radius: 360px;
+    margin-right: 50px;
+    float: left;
+}
+
+.tech {
+    width: 50vw;
+    position: relative;
+    margin: 170px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    transition: 0.5s ease;
+}
+
+.tech ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tech li {
+    margin-right: 100px;
+}
+
+.fa-html5:hover {
+    color: #f16529;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+
+.fa-css3-alt:hover {
+    color: #379ad6;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+.fa-js-square:hover {
+    color: #f7df1e;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+.fa-node:hover {
+    color: #83cd29;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+.fa-python:hover {
+    color: #347ab4;
+    font-size: 1.5em;
+    transition: 0.5s ease;
+}
+
+/*Galery*/
+#gallery {
+    background-image: linear-gradient(to bottom, rgba(150, 0, 0, 0.52), rgba(0, 0, 0, 1)), url('../images/mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+.album h1 {
+    color: #fff;
+    letter-spacing: 2.5px;
+    margin: 2rem;
+}
+
+.card {
+    width: 50%;
+    margin: 25%
+}
+
+/*Resume*/
+#resume {
+    text-align: center;
+    height: 80vh;
+}
+
+.resume-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.resume-content h2{
+    margin-bottom: 5%;
+}
+
+
+.feature-img {
+    font-size: 3.6rem;
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.feature-img :hover {
+    color: #ff4c68;
+}
+
+/*Contact*/
+#contact {
+    background-color: #262626;/*A lighter black*/
+    color: #fff;
+    padding: 5% 7%;
+    height: 45vh;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-items {
+    width: 50vw;
+    position: relative;
+    margin: 170px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+
+.contact-items ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-items ul li {
+    width: 75px;
+    height: 75px;
+    margin: 5px 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30%;
+    border: 5px solid #fff;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+/*Linkedin*/
+.contact-items ul li:hover.facebook{
+    border: 5px solid  #3b5998;
+    box-shadow: 0 0 15px  #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*
+.contact-items ul li:hover.facebook{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+*/
+
+/*twitter*/
+.contact-items ul li:hover.twitter{
+    border: 5px solid  #00aced;
+    box-shadow: 0 0 15px  #00aced;
+    transition: all 0.5s ease;
+}
+
+/*Insta*/
+.contact-items ul li:hover.instagram{
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/*Github*/
+.contact-items ul li:hover.google{
+    border: 5px solid  #dd4b39;
+    box-shadow: 0 0 15px  #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.responsive-nav {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+    
+    .header {
+        padding: 0%;
+    }
+    
+    .header h1 {
+        font-size: 3.5rem;
+        padding-top: 300px;
+    }
+
+    .header h3 {
+        font-size: 2rem;
+    }
+    
+    #about {
+        height: 150vh;
+    }
+    
+    
+    #contact {
+        height: 75vh;
+    }
+    
+    
+    .contact-items ul li a {
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
