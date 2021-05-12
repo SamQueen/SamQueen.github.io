@@ -200,7 +200,7 @@ nav ul li a {
     height: 120vh;
     max-width: 100%;
     background: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(/public/images/pexels-hristo-fidanov-1252869.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/public/images/pexels-hristo-fidanov-1252869.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 7% 15%;
