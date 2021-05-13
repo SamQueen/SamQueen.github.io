@@ -59,6 +59,11 @@ nav ul li a {
     text-decoration: none;
     color: #eee;
     font-size: 1em;
+    transition: 0.5s ease;
+}
+
+nav ul li a {
+    transition: 0.s ease;
 }
 
 
@@ -122,8 +127,9 @@ nav ul li a {
 }
 
 .about-content img {
-    height: 200px;
+    height: 100px;
     border-radius: 200px;
+    margin-top: 20px;
 }
 
 .about-content p {
@@ -152,6 +158,10 @@ nav ul li a {
 .tech-list i{
     font-size: 2em;
     transition: 0.5s ease;
+}
+
+.html {
+    animation: glow 2s infinite;
 }
 
 .html:hover {
@@ -254,7 +264,7 @@ nav ul li a {
 
 /*Resume Section*/
 #resume {
-    height: auto;
+    height: 90vh;
     text-align: center;
     background: #eee;
     padding: 15% 15%;
@@ -267,11 +277,21 @@ nav ul li a {
 #resume i {
     font-size: 2em;
     color: #24376C;
+    animation-name: waiting;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
 }
 
 #resume i:hover {
     cursor: pointer;
     color: #3B508B;
+}
+
+@keyframes waiting {
+    0% {font-size: 2em;}
+    30% {font-size: 2.5em;}
+    100% {font-size: 2em;}
 }
 
 
@@ -345,3 +365,78 @@ nav ul li a {
     box-shadow: 0 0 15px  #dd4b39;
     transition: all 0.5s ease;
 }
+
+
+
+/*Responsive Media Query*/
+nav i {
+    visibility: hidden;
+}
+
+.mobile-nav {
+    height: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav i {
+        visibility: visible;
+        color: #eee;
+        font-size: 2em;
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .mobile-nav.active {
+        background-attachment: fixed;
+        height: 400px;
+        animation-name: grow-mobile-nav;
+        animation-duration: 1s;
+        background-color: #000;
+        width: 100%
+    }
+    
+    @keyframes grow-mobile-nav {
+        from{height: 0;}
+        to{height:400px;}
+    }
+    
+    .mobile-ul.show {
+        display: inline;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mobile-ul li {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    #about {
+        display: none;
+    }
+    
+    #projects {
+        display: none;
+    }
+    
+    #resume {
+        display: none;
+    }
+    
+    #contact {
+        display: none;
+    }
+}
+
+
+
+
