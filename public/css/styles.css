@@ -72,7 +72,7 @@ nav ul li a {
 #title {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.99)), url(/public/images/pexels-ian-beckley-2440024.jpg);
-    background-size: cover; 
+    background-size: cover;
 }
 
 .title-banner {
@@ -108,7 +108,7 @@ nav ul li a {
 
 /*About Section*/
 #about {
-    height: 100vh; 
+    height: 100vh;
     max-width: 100%;
     padding: 7% 15%;
     background: #eee;
@@ -210,7 +210,7 @@ nav ul li a {
     height: 120vh;
     max-width: 100%;
     background: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(/public/images/pexels-hristo-fidanov-1252869.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('public/images/pexels-hristo-fidanov-1252869.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding: 7% 15%;
@@ -252,7 +252,7 @@ nav ul li a {
 
 .card .btn {
     position: relative;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -378,10 +378,11 @@ nav i {
 }
 
 @media only screen and (max-width: 900px) {
+    /*nav*/
     nav ul {
         display: none;
     }
-    
+
     nav i {
         visibility: visible;
         color: #eee;
@@ -391,7 +392,7 @@ nav i {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     .mobile-nav.active {
         background-attachment: fixed;
         height: 400px;
@@ -400,12 +401,12 @@ nav i {
         background-color: #000;
         width: 100%
     }
-    
+
     @keyframes grow-mobile-nav {
         from{height: 0;}
         to{height:400px;}
     }
-    
+
     .mobile-ul.show {
         display: inline;
         position: absolute;
@@ -414,29 +415,37 @@ nav i {
         width: 100%;
         text-align: center;
     }
-    
+
     .mobile-ul li {
         margin-bottom: 30px;
         border-bottom: 1px solid #eee;
     }
-    
+
+
+    /*title*/
+    .title-banner {
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .title-banner h2 {
+        font-size: 1.5em;
+    }
+
+
     #about {
         display: none;
     }
-    
+
     #projects {
         display: none;
     }
-    
+
     #resume {
         display: none;
     }
-    
+
     #contact {
         display: none;
     }
 }
-
-
-
-
