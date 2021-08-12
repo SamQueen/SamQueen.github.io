@@ -7,8 +7,13 @@ $(window).on('scroll', function() {
     }
 });
 
-//Show mibile nav list when icon is clicked 
+//Show mobile nav list when icon is clicked
 $('nav i').on('click', function() {
-    $('.mobile-nav').toggleClass('active'); 
-    $('.mobile-ul').toggleClass('show'); 
+    $('.mobile-nav').toggleClass('active');
+    $('.mobile-ul').toggleClass('show');
+});
+
+//Contact section link redirects
+$('.github').on('click', function() {
+  window.open('https://github.com/SamQueen', '_blank').focus();
 });
