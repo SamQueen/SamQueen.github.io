@@ -120,21 +120,25 @@ nav ul li a {
 }
 
 .about-content {
-    display: flex;
+    display: block;
     width: 70%;
     position: relative;
     margin: 0 auto;
 }
 
 .about-content img {
-    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
     border-radius: 200px;
-    margin-top: 20px;
+    margin: 20px 0 50px;
 }
 
 .about-content p {
     line-height: 2;
     margin: auto 0 auto 25px;
+    text-align: center;
 }
 
 .tech-list {
@@ -210,7 +214,7 @@ nav ul li a {
     height: 120vh;
     max-width: 100%;
     background: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('public/images/pexels-hristo-fidanov-1252869.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(public/images/pexels-hristo-fidanov-1252869.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 7% 15%;
