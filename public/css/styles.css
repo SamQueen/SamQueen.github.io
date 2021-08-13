@@ -343,7 +343,7 @@ nav ul li a {
 }
 
 /*Linkedin*/
-.contact-items ul li:hover.facebook{
+.contact-items ul li:hover.linkedin{
     border: 5px solid  #3b5998;
     box-shadow: 0 0 15px  #3b5998;
     transition: all 0.5s ease;
