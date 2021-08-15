@@ -236,11 +236,6 @@ nav ul li a {
     color: #eee;
 }
 
-.project-gallery {
-    background: yellow;
-    position: relative;
-}
-
 .project-gallery ul {
     display: flex;
     list-style: none;
@@ -273,7 +268,6 @@ nav ul li a {
 .last-card {
     margin-right: 0;
 }
-
 
 
 /*Resume Section*/
@@ -429,19 +423,56 @@ nav ul li a {
 
   /*About Section*/
   #about {
-    height: 200vh;
+    height: 150vh;
+  }
+
+  .about-content {
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #about h1 {
+    margin-top: 30px;
+  }
+
+  .about-content p {
+      line-height: 2;
+      margin: auto 0 auto 25px;
+      text-align: center;
+      margin-bottom: 50px;
+  }
+
+  about-content img {
+      left: 50%;
+      transform: translateX(-60%);
   }
 
   .tech-list ul {
+
+  }
+
+  .tech-list ul li {
+    width: 5px;
+  }
+
+
+  /*Projects Section*/
+  #projects {
+    height: 250vh;
+  }
+
+  .project-gallery ul {
     display: inline-block;
   }
 
-  #projects {
-
-  }
   .card {
-    width: 2rem;
+    margin-bottom: 50px;
   }
+
+
+
+
 
   #resume {
 
