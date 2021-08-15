@@ -9,8 +9,7 @@ $(window).on('scroll', function() {
 
 //Show mobile nav list when icon is clicked
 $('nav i').on('click', function() {
-    $('.mobile-nav').toggleClass('active');
-    $('.mobile-ul').toggleClass('show');
+    alert("clicked");
 });
 
 //Contact section link redirects

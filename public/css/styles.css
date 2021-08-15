@@ -165,48 +165,58 @@ nav ul li a {
 }
 
 .html {
-    animation: glow 2s infinite;
+    color: #f16529;
 }
 
 .html:hover {
-    color: #f16529;
     font-size: 3em;
     transition: 0.5s ease;
+}
+
+.css {
+  color: #379ad6;
 }
 
 .css:hover {
-    color: #379ad6;
     font-size: 3em;
     transition: 0.5s ease;
+}
+
+.javascript {
+  color : #f7df1e;
 }
 
 .javascript:hover {
-    color: #f7df1e;
     font-size: 3em;
     transition: 0.5s ease;
+}
+
+.python {
+  color: #347ab4;
 }
 
 .python:hover {
-    color: #347ab4;
     font-size: 3em;
     transition: 0.5s ease;
+}
+
+.java {
+  color: orange;
 }
 
 .java:hover {
-    color: orange;
     font-size: 3em;
     transition: 0.5s ease;
+}
+
+.node {
+  color: #83cd29;
 }
 
 .node:hover {
-    color: #83cd29;
     font-size: 3em;
-    animation-name: rotate-icon;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
     transition: 0.5s ease;
 }
-
 
 
 /*Project Section*/
@@ -373,83 +383,74 @@ nav ul li a {
 
 
 /*Responsive Media Query*/
-nav i {
-    visibility: hidden;
-}
-
 .mobile-nav {
-    height: 0;
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 900px) {
-    /*nav*/
-    nav ul {
-        display: none;
-    }
 
-    nav i {
-        visibility: visible;
-        color: #eee;
-        font-size: 2em;
-        position: absolute;
-        right: 25px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+  /*Nav Section*/
+  nav {
+    width: 100vw;
+  }
 
-    .mobile-nav.active {
-        background-attachment: fixed;
-        height: 400px;
-        animation-name: grow-mobile-nav;
-        animation-duration: 1s;
-        background-color: #000;
-        width: 100%
-    }
+  nav ul {
+    display: none;
+  }
 
-    @keyframes grow-mobile-nav {
-        from{height: 0;}
-        to{height:400px;}
-    }
+  .mobile-nav {
+    visibility: visible;
+  }
 
-    .mobile-ul.show {
-        display: inline;
-        position: absolute;
-        top: 250px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .mobile-ul li {
-        margin-bottom: 30px;
-        border-bottom: 1px solid #eee;
-    }
+  .mobile-nav i {
+    position: absolute;
+    right: 20px;
+    color: #ffff;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+  }
 
 
-    /*title*/
-    .title-banner {
-        background-color: transparent;
-        width: 100%;
-    }
+  /*Title Section*/
+  .title-banner {
+    width: 75%;
+  }
 
-    .title-banner h2 {
-        font-size: 1.5em;
-    }
+  .top {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+  }
+
+  .bottom {
+    font-size: 1.5em;
+  }
 
 
-    #about {
-        display: none;
-    }
+  /*About Section*/
+  #about {
+    height: 200vh;
+  }
 
-    #projects {
-        display: none;
-    }
+  .tech-list ul {
+    display: inline-block;
+  }
 
-    #resume {
-        display: none;
-    }
+  #projects {
 
-    #contact {
-        display: none;
-    }
+  }
+  .card {
+    width: 2rem;
+  }
+
+  #resume {
+
+  }
+
+  #contact {
+
+  }
+  .contact-items ul{
+    display: inline-block;
+  }
 }
