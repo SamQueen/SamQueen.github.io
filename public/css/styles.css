@@ -111,6 +111,23 @@ nav ul li a {
     font-size: 2.1rem;
 }
 
+.title-down-arrow {
+    position: relative;
+    top: 80%;
+    text-align: center;
+}
+
+.title-down-arrow i {
+    color: #eee;
+}
+
+.title-down-arrow i:hover {
+    color: #dbdada;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 3.1rem;
+}
+
 
 /*About Section*/
 #about {
@@ -255,6 +272,23 @@ nav ul li a {
     transition: 0.5s ease;
 }
 
+.about-down-arrow {
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+
+.about-down-arrow i {
+    color: #eee;
+}
+
+.about-down-arrow i:hover {
+    color: #dbdada;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 3.1rem;
+}
+
 
 /*Project Section*/
 #projects {
@@ -314,6 +348,23 @@ nav ul li a {
     margin-right: 0;
 }
 
+.projects-down-arrow {
+    position: relative;
+    top: 85%;
+    text-align: center;
+}
+
+.projects-down-arrow i {
+    color: #eee;
+}
+
+.projects-down-arrow i:hover {
+    color: #dbdada;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 3.1rem;
+}
+
 
 /*Resume Section*/
 #resume {
@@ -329,26 +380,32 @@ nav ul li a {
     margin-bottom: 100px;
 }
 
-#resume i {
+.resume-icon i {
     font-size: 2em;
     color: #24376C;
-    animation-name: waiting;
-    animation-duration: 5s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
 }
 
-#resume i:hover {
+.resume-icon i:hover {
     cursor: pointer;
     color: #3B508B;
 }
 
-@keyframes waiting {
-    0% {font-size: 2em;}
-    30% {font-size: 2.5em;}
-    100% {font-size: 2em;}
+.resume-down-arrow {
+    position: relative;
+    top: 85%;
+    text-align: center;
 }
 
+.resume-down-arrow i {
+    color: #eee;
+}
+
+.resume-down-arrow i:hover {
+    color: #dbdada;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 3.1rem;
+}
 
 
 /*Contact Section*/
