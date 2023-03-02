@@ -13,8 +13,14 @@ $('nav i').on('click', function() {
 });
 
 //Contact section link redirects
-$('.linkedin').on('click', function() {
-  window.open('https://www.linkedin.com/in/queen-sam/', '_blank').focus();
+$('.google').on('click', function() {
+  var email = 'sjqueen@asu.edu';
+  var subject = '';
+  var emailBody = '';
+  var attach = 'path';
+        
+  document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody+
+  "?attach="+attach;
 });
 
 $('.instagram').on('click', function() {

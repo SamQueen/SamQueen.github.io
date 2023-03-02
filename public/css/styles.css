@@ -34,7 +34,7 @@ nav {
 
 nav.shrink {
     height: 10vh;
-    background-color: #000;
+    background-color: #161616;
     transition: 0.5s ease;
 }
 
@@ -135,7 +135,7 @@ nav ul li a {
     width: 100px;
     height: 100px;
     background-color: #eee;
-    box-shadow:0 0 12px #9ecaed;
+    box-shadow:0 0 25px #9ecaed;
     border-radius: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -259,7 +259,7 @@ nav ul li a {
 /*Project Section*/
 #projects {
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
     background: #000;
     background-image: linear-gradient(rgba(29, 30, 33, 0.70), rgba(29, 30, 33, 0.99)), url(../images/pexels-hristo-fidanov-1252869.jpg);
     background-attachment: fixed;
@@ -353,21 +353,16 @@ nav ul li a {
 
 /*Contact Section*/
 #contact {
-/*    background-color: #262626;A lighter black*/
-    background-color: #000;
-    color: #fff;
-    padding: 5% 7%;
-    height: 50vh;
-}
-
-.contact-me {
-    text-align: center;
+    /*background-color: #262626; a lighter black */
+    background-color: #161616;
+    color: #eee;
+    height: 15vh;
 }
 
 .contact-items {
     width: 50vw;
     position: relative;
-    margin: 80px 0;
+    padding-top: 2%;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s ease;
@@ -394,7 +389,7 @@ nav ul li a {
 }
 
 /*Linkedin*/
-.contact-items ul li:hover.linkedin{
+.contact-items ul li:hover.google{
     border: 5px solid  #3b5998;
     box-shadow: 0 0 15px  #3b5998;
     transition: all 0.5s ease;
@@ -421,6 +416,21 @@ nav ul li a {
     transition: all 0.5s ease;
 }
 
+.credit {
+    background-color: #161616;
+    color: #eee;
+}
+
+.credit p {
+    left: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.credit a {
+    text-decoration: none;
+}
+
 
 
 /*Responsive Media Query*/
@@ -430,110 +440,5 @@ nav ul li a {
 
 @media only screen and (max-width: 900px) {
 
-  /*Nav Section*/
-  nav {
-    width: 100vw;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  .mobile-nav {
-    visibility: visible;
-  }
-
-  .mobile-nav i {
-    position: absolute;
-    right: 20px;
-    color: #ffff;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2em;
-  }
-
-
-  /*Title Section*/
-  .title-banner {
-    width: 75%;
-  }
-
-  .top {
-    font-size: 2.2em;
-    margin-bottom: 15px;
-  }
-
-  .bottom {
-    font-size: 1.5em;
-  }
-
-
-  /*About Section*/
-  #about {
-    height: 150vh;
-  }
-
-  .about-content {
-    width: 80vw;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #about h1 {
-    margin-top: 30px;
-  }
-
-  .about-content p {
-      line-height: 2;
-      margin: auto 0 auto 25px;
-      text-align: center;
-      margin-bottom: 50px;
-  }
-
-  about-content img {
-      left: 50%;
-      transform: translateX(-60%);
-  }
-
-  .tech-list ul {
-
-  }
-
-  .tech-list ul li {
-    width: 5px;
-  }
-
-
-  /*Projects Section*/
-  #projects {
-    height: 250vh;
-  }
-
-  .project-gallery ul {
-    display: inline-block;
-  }
-
-  .card {
-    margin-bottom: 50px;
-  }
-
-
-
-
-
-  #resume {
-
-  }
-
-  #contact {
-
-  }
-  .contact-items ul{
-    display: inline-block;
-  }
-}
-
-.carousel-item {
-    width: 20px;
-    left: 500px;
+  
 }
