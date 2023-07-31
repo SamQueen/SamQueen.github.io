@@ -325,12 +325,12 @@ nav ul li a {
 
 .card {
     width: 15rem;
-    height: 24rem;
+    height: 26rem;
     margin-right: 25px;
 }
 
 .card img {
-    height: 150px;
+    max-height: 250px;
     margin-bottom: 25px;
 }
 
@@ -338,10 +338,14 @@ nav ul li a {
     text-align: center;
 }
 
+.card-foot {
+    padding: 0 2%;
+}
+
 .card .btn {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
+    bottom: 20px;
+    width: 96%;
 }
 
 .last-card {
