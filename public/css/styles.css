@@ -151,7 +151,6 @@ nav ul li a {
     position: relative;
     margin: 8% auto 0;
     text-align: center;
-    background-color: blue;
 }
 
 .moon {
@@ -202,7 +201,6 @@ nav ul li a {
 
 .tech-list {
     position: relative;
-    background-color: red;
     width: 100%;
 }
 
