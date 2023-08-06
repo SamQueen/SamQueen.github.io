@@ -151,6 +151,7 @@ nav ul li a {
     position: relative;
     margin: 8% auto 0;
     text-align: center;
+    background-color: blue;
 }
 
 .moon {
@@ -160,10 +161,7 @@ nav ul li a {
     background-color: #eee;
     box-shadow:0 0 25px #9ecaed;
     border-radius: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto;
 }
 
 .crator1 {
@@ -198,26 +196,28 @@ nav ul li a {
 
 .about-content p {
     line-height: 2;
-    margin: auto 0 auto 25px;
+    margin: auto 0;
     text-align: center;
 }
 
 .tech-list {
     position: relative;
+    background-color: red;
+    width: 100%;
 }
 
 .tech-list ul {
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     list-style: none;
-    margin-top: 75px;
+    position: relative;
+    width: 100%;
+    margin: 75px 0 0;
+    padding: 0;
 }
 
 .tech-list ul li {
-    margin-right: 50px;
-}
+    flex: auto;
+} 
 
 .tech-list i{
     font-size: 2em;
@@ -591,8 +591,13 @@ nav ul li a {
         width: 95%;
     }
 
+    .moon {
+        margin: 10% auto;
+    }
 
-
+    .about-down-arrow {
+        top: 30%;
+    }
 
 
     #projects {
@@ -615,6 +620,14 @@ nav ul li a {
     
     .bottom {
         font-size: 1.5rem;
+    }
+
+    .moon {
+        margin: 25% auto;
+    }
+
+    .about-down-arrow {
+        top: 20%;
     }
 
 }
