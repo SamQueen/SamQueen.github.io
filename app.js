@@ -69,7 +69,7 @@ particlesJS('title',
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -132,12 +132,12 @@ particlesJS('title',
 
 );
 
-particlesJS('projects',
+particlesJS('projectss',
   
   {
     "particles": {
       "number": {
-        "value": 300,
+        "value": 100,
         "density": {
           "enable": true,
           "value_area": 800
@@ -190,7 +190,7 @@ particlesJS('projects',
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,

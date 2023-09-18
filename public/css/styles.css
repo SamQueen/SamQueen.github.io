@@ -296,81 +296,56 @@ nav ul li a {
 
 /*Project Section*/
 #projects {
-    height: 100vh;
     width: 100%;
-    background: #000;
-    background-image: linear-gradient(rgba(29, 30, 33, 0.70), rgba(29, 30, 33, 0.99)), url(../images/pexels-hristo-fidanov-1252869.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.project-gallery {
-    position: absolute;
-    top: 220%;
-    transform: translateY(-220%);
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.project-gallery h1 {
-    position: relative;
+    background: #1d1e21;
     color: #eee;
-    text-align: center;
-    margin-bottom: 70px;
 }
 
-.project-gallery ul {
+#projects h1 {
+    text-align: center;
+}
+
+.gallery {
+    padding: 5% 10%;
+}
+
+.project  {
+    margin: 10% 0;
+}
+
+.project h2 {
+    margin: 5% auto;
+}
+
+.project-info {
     display: flex;
-    list-style: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.card {
-    width: 15rem;
-    height: 26rem;
-    margin-right: 25px;
+.project-about {
+    width: 100%;
+    padding: 5% 7%;
 }
 
-.card img {
-    max-height: 250px;
-    margin-bottom: 25px;
+.project-about p {
+    margin: 5% 0;
 }
 
-.card-title {
-    text-align: center;
+.gallery img {
+    width: 50%;
 }
 
-.card-foot {
-    padding: 0 2%;
-}
-
-.card .btn {
-    position: absolute;
-    bottom: 20px;
-    width: 96%;
-}
-
-.last-card {
-    margin-right: 0;
-}
-
-.projects-down-arrow {
-    position: relative;
-    top: 85%;
-    text-align: center;
-}
-
-.projects-down-arrow i {
-    color: #eee;
-}
-
-.projects-down-arrow i:hover {
-    color: #dbdada;
+.demo-btn {
+    border: 1px solid #eee;
+    padding: 5px 7px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: 0.4s;
-    font-size: 3.1rem;
+}
+
+.demo-btn:hover {
+    background-color: #eee;
+    color: #1d1e21;
+    font-size: 1.3em;
+    transition: 0.5s;
 }
 
 
@@ -390,7 +365,7 @@ nav ul li a {
 
 .resume-icon i {
     font-size: 2em;
-    color: #24376C;
+    color: #eee;
 }
 
 .resume-icon i:hover {
@@ -468,9 +443,9 @@ nav ul li a {
 }
 
 /*Insta*/
-.contact-items ul li:hover.instagram{
-    border: 5px solid #bc2a8d;
-    box-shadow: 0 0 15px #bc2a8d;
+.contact-items ul li:hover.link{
+    border: 5px solid #077b50;
+    box-shadow: 0 0 15px #0077B5;
     transition: all 0.5s ease;
 }
 

@@ -35,8 +35,8 @@ $('.google').on('click', function() {
   "?attach="+attach;
 });
 
-$('.instagram').on('click', function() {
-  window.open('https://www.instagram.com/sam_queen06/', '_blank').focus();
+$('.link').on('click', function() {
+  window.open('https://www.linkedin.com/in/samuel-queen-599298272/', '_blank').focus();
 });
 
 $('.github').on('click', function() {
