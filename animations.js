@@ -42,3 +42,15 @@ $('.link').on('click', function() {
 $('.github').on('click', function() {
   window.open('https://github.com/SamQueen', '_blank').focus();
 });
+
+$('.picture-this-demo').on('click', function() {
+  window.open('https://picturethisapp.netlify.app/', '_blank').focus();
+});
+
+$('.bubble-demo').on('click', function() {
+  window.open('./bubble-sort/bubble.html', '_blank').focus();
+});
+
+$('.signup-demo').on('click', function() {
+  window.open('https://stark-crag-02725.herokuapp.com/', '_blank').focus();
+});
