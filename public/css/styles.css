@@ -483,6 +483,14 @@ nav ul li a {
     display: none;
 }
 
+.mobile-project-title {
+    display: none;
+}
+
+.mobile-gallery-img {
+    display: none;
+}
+
 @media only screen and (max-width: 1100px) {
 
     /* nav */
@@ -572,10 +580,40 @@ nav ul li a {
         top: 30%;
     }
 
-
+    /* projects section */
     #projects {
+        padding: 20% 0;
+    }
+
+    .mobile-project-title {
+        display: block;
+    }
+
+    .web-project-title {
         display: none;
     }
+
+    .project-info {
+        display: inline-block;
+    }
+
+    .project {
+        margin: 25% 0;
+    }
+
+    .mobile-gallery-img {
+        display: block;
+    }
+
+    .web-gallery-img {
+        display: none;;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+
     #resume {
         display: none;
     }
