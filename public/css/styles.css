@@ -332,6 +332,7 @@ nav ul li a {
 
 .gallery img {
     width: 50%;
+    padding: 5% 7%;
 }
 
 .demo-btn {
@@ -472,9 +473,29 @@ nav ul li a {
 }
 
 
+/* slide in trasnisions */
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition: all 1.5s;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+     transform: translateX(10%); 
+    transition: all 1.5s;
+}
+
+.slide-in {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 /*Responsive Media Query*/
-
 #mobile-nav-icon {
     display: none;
 }
