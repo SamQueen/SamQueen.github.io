@@ -6,8 +6,8 @@
 
 /* Remmove Scroll Bar */
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    /*width: 0;*/  /* Remove scrollbar space */
+    /*background: transparent;*/  /* Optional: just make scrollbar invisible */
 }
 
 
@@ -278,8 +278,8 @@ nav ul li a {
 
 .about-down-arrow {
     position: relative;
-    top: 20%;
     text-align: center;
+    display: none;
 }
 
 .about-down-arrow i {
