@@ -43,6 +43,10 @@ $('.github').on('click', function() {
 	window.open('https://github.com/SamQueen', '_blank').focus();
 });
 
+$('.veriloot-demo').on('click', function() {
+	window.open('https://652b9e6f6c9a35100a0ed88c--roaring-fenglisu-92d210.netlify.app/', '_blank').focus();
+});
+
 $('.picture-this-demo').on('click', function() {
 	window.open('https://picturethisapp.netlify.app/', '_blank').focus();
 });
@@ -68,6 +72,21 @@ const observer = new IntersectionObserver((entries) => {
 	});
 });
 
+const observer2 = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		
+		if(entry.isIntersecting) {
+			entry.target.classList.add('slide-in');
+		} else {
+			entry.target.classList.remove('slide-in');
+		}
+	});
+});
+
+
 
 const slideInElementsLeft = document.querySelectorAll('.slide-element');
 slideInElementsLeft.forEach((el) => observer.observe(el));
+
+const listElementAnimation = document.querySelectorAll('.animate');
+listElementAnimation.forEach((el) => observer2.observe(el));
