@@ -8,12 +8,11 @@ import {FaArrowCircleDown} from 'react-icons/fa';
 function TitleSection() {
     
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
         await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        await console.log('particles loaded');
     }, []);
 
     const arrowDownEvent = () => {
