@@ -1,0 +1,177 @@
+.contact-section-container {
+    padding: 7% 15%;
+    min-height: 100vh;
+}
+
+.contact-section {
+    display: flex;
+    min-height: 80%;
+    margin-top: 5%;
+}
+
+.contact-section h3 {
+    
+}
+
+.contact-page {
+    box-shadow: 7px 9px 18px -4px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 7px 9px 18px -4px rgba(0,0,0,0.74);
+    -moz-box-shadow: 7px 9px 18px -4px rgba(0,0,0,0.74);
+    background-color: #ffffff;
+    width: 40%;
+    padding: 2% 2%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact-page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-page input {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 1rem;
+    margin: 7px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(107, 107, 107);
+    box-sizing: border-box;
+}
+
+.contact-page input:focus {
+    outline: none;
+}
+
+#contact-page-info {
+    margin: 20px 0 5px;
+}
+
+.contact-page textarea {
+    width: 100%;
+    padding: 6px 8px;
+    font-size: 1rem;
+    margin: 7px 0;
+    height: 150px;
+    border: 1px solid rgb(107, 107, 107);
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-page textarea:focus {
+    outline: none;
+}
+
+#contact-page-send-btn {
+    /* border: 2px solid rgb(204, 101, 103); */
+    box-sizing: border-box;
+    background-color:rgb(204, 101, 103);
+    color: #eee;
+    padding: 5px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-page-send-btn:hover {
+    background-color:rgb(189, 85, 85);
+    color: #eee;
+    transition: 0.5s;
+}
+
+.contact-info-container {
+    width: 50%;
+}
+
+
+/* contact icon list */
+#contact-icon-list {
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+}
+
+#contact-icon-list li {
+    width: 4rem;
+    height: 4rem;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-icon-git {
+    background-color: #2d3132;
+}
+
+#contact-icon-git:hover {
+    background-color: #3a3e3f;
+    transition: 0.5s;
+}
+
+#contact-icon-phone {
+    background-color: #0ece0e;
+}
+
+#contact-icon-phone:hover {
+    background-color: #32e632;
+    transition: 0.5s;
+}
+
+#contact-icon-linkedin {
+    background-color: #0e76a8;
+}
+
+#contact-icon-linkedin:hover {
+    background-color: #1d8bbe;
+    transition: 0.5s;
+}
+
+#contact-icon-gmail {
+    background-color: #f46b10;
+    font-weight: bold;
+}
+
+#contact-icon-gmail:hover {
+    background-color: #eb782b;
+    transition: 0.5s;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+    .contact-section {
+        display: block;
+    }
+
+    .contact-page {
+        width: 80%;
+    }
+
+    #contact-icon-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-info-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contact-section-container {
+        padding: 5% 8%;
+        min-height: 100vh;
+    }
+
+    .contact-page {
+        width: 90%;
+    }
+}

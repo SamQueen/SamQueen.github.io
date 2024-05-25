@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-section-container {
+    padding: 7% 15% 2%;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* blinking cursor */
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+/* typing animation */
+@keyframes typing {
+    40%, 60% { width: 100% }
+
+    100% {width: 0}
+}
+
+/* slide */
+@keyframes slide {
+    100% {
+        top: -260px;
+    }
+}
+
+#title {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.typing-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.typing-container p {
+    font-size: 3.5rem;
+    margin-right: 20px;
+}
+
+.typing-list {
+    width: fit-content;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    margin: 20px 0;
+    color: rgb(173, 122, 122);
+}
+
+#type {
+    border-right: 5px solid black;
+    width: 0;
+    font-size: 3.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    animation: typing 6s steps(19) infinite, slide 18s steps(3) infinite; 
+    /* animation: typing 6s steps(19) infinite; */
+}
+
+#paragraph {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+/* tach stack */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10% auto 0;
+    width: 90%;
+    text-align: center;
+}
+
+.tech-item {
+    margin-bottom: 60px;
+}
+
+.tech-stack img {
+    height: 3rem;
+}
+
+
+
+
+/* media queries */
+/* media queries */
+@media screen and (max-width: 1200px) {
+    .typing-container p {
+        font-size: 3rem;
+    }
+
+    #type {
+        font-size: 3rem;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -210px;
+        }
+    }
+
+    .typing-list {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .typing-container p {
+        font-size: 2rem;
+    }
+
+    #type {
+        font-size: 2rem;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -140px;
+        }
+    }
+
+    .typing-list {
+        height: 60px;
+    }
+
+    .tech-stack {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-stack img {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-section-container {
+        padding: 5% 8% 2%;
+    }
+    
+    .typing-container p {
+        font-size: 1.3rem;
+    }
+
+    #type {
+        font-size: 1.3rem;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -90px;
+        }
+    }
+
+    #paragraph {
+        text-align: center;
+        margin: 20px 0 50px;
+    }
+
+    .typing-list {
+        height: 30px;
+    }
+
+    .tech-stack img {
+        height: 1.5rem;
+    }
+}
+

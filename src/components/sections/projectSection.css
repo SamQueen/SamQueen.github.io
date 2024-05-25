@@ -1,0 +1,21 @@
+.project-section-container {
+    padding: 4% 15%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.gallery {
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1300px) {
+    .project-section-container {
+        padding: 4% 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .project-section-container {
+        padding: 4% 5%;
+    }
+}
