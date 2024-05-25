@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from 'framer-motion';
 import './projectItem.css';
 
-const ProjectItem = ({imgPath, link, side, title, description,}) => {
+const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
     
     const openLink = (link) => {
         window.open(link, '_blank');
@@ -31,10 +31,9 @@ const ProjectItem = ({imgPath, link, side, title, description,}) => {
                     <p>{description}</p>
 
                     <ul className="project-tech-stack">
-                        <li><img src='./tech/react.png'></img></li>
-                        <li><img src='./tech/next.png'></img></li>
-                        <li><img src='./tech/vite.png'></img></li>
-                        <li><img src='./tech/sass.png'></img></li>
+                        {techStack.map((item, i) => (
+                            <li key={i}><img src={`./tech/${item}.png`}></img></li>
+                        ))}          
                     </ul>
 
                     <span id="project-btn" onClick={() => openLink(link)}>Demo</span>
@@ -56,10 +55,11 @@ const ProjectItem = ({imgPath, link, side, title, description,}) => {
                 <p>{description}</p>
 
                 <ul className="project-tech-stack">
-                    <li><img src='./tech/react.png'></img></li>
-                    <li><img src='./tech/next.png'></img></li>
-                    <li><img src='./tech/vite.png'></img></li>
-                    <li><img src='./tech/sass.png'></img></li>
+                    <ul className="project-tech-stack">
+                        {techStack.map((item, i) => (
+                            <li key={i}><img src={`./tech/${item}.png`}></img></li>
+                        ))}          
+                    </ul>
                 </ul>
 
                 <span id="project-btn" onClick={() => openLink(link)}>Demo</span>

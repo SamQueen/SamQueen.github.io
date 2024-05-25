@@ -64,8 +64,8 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 1.1 }}
                 >
-                    <img src={'tech/sass.png'} />
-                    <p>Sass</p>
+                    <img src={'tech/typeScript.png'} />
+                    <p>Typescript</p>
                 </motion.div>
 
                 <motion.div 
@@ -75,8 +75,8 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/jq.png'} />
-                    <p>jQuery</p>
+                    <img src={'tech/tailwind.png'} />
+                    <p>Tailwind</p>
                 </motion.div>
 
                 <motion.div 
