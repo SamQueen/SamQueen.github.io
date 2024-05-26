@@ -27,7 +27,7 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
                     viewport={{ once: true, amount: 0.8}}
                 >
                     <h3>{title}</h3>
-                    <img id="mobile-project-img" src="projects/veriloot.JPG"></img>
+                    <img id="mobile-project-img" src={imgPath}></img>
                     <p>{description}</p>
 
                     <ul className="project-tech-stack">
@@ -51,15 +51,13 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
                 viewport={{ once: true, amount: 0.8}}
             >
                 <h3>{title}</h3>
-                <img id="mobile-project-img" src="projects/veriloot.JPG"></img>
+                <img id="mobile-project-img" src={imgPath}></img>
                 <p>{description}</p>
 
                 <ul className="project-tech-stack">
-                    <ul className="project-tech-stack">
-                        {techStack.map((item, i) => (
-                            <li key={i}><img src={`./tech/${item}.png`}></img></li>
-                        ))}          
-                    </ul>
+                    {techStack.map((item, i) => (
+                        <li key={i}><img src={`./tech/${item}.png`}></img></li>
+                    ))}          
                 </ul>
 
                 <span id="project-btn" onClick={() => openLink(link)}>Demo</span>
