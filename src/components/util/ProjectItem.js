@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from 'framer-motion';
 import './projectItem.css';
 
-const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
+const ProjectItem = ({imgPath, link, side, title, description, techStack, gitLink}) => {
     
     const openLink = (link) => {
         window.open(link, '_blank');
@@ -37,6 +37,7 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
                     </ul>
 
                     <span id="project-btn" onClick={() => openLink(link)}>Demo</span>
+                    <span id="git-btn" onClick={() => openLink(gitLink)}>Git Repo</span>
                 </motion.div>
             </div>
         )
@@ -61,6 +62,7 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack}) => {
                 </ul>
 
                 <span id="project-btn" onClick={() => openLink(link)}>Demo</span>
+                <span id="git-btn" onClick={() => openLink(gitLink)}>Git Repo</span>
             </motion.div>
 
             <motion.div 

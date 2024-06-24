@@ -17,27 +17,30 @@ function ProjectSection() {
 
     const projects = [
         {
+            'title': 'Picture Perfect',
+            'description': 'An Instagram-inspired CRUD application enabling users to log in, share photos, comment on posts, and personalize their profiles.',
+            'imgPath': 'projects/picture-perfect.JPG',
+            'link': 'https://www.pictureper.com/',
+            'gitLink': 'https://github.com/SamQueen/Picture-Perfect-Client',
+            'techStack': ['react', 'next', 'tailwind', 'typescript', 'mysql', 'node'],
+            'side': 'left'
+        },
+        {
             'title': 'Netflix Clone',
             'description': 'Presenting a React-based portfolio project showcasing a Netflix-inspired streaming platform, integrated with the TMDB API for an extensive collection of movies and TV shows.',
             'imgPath': 'projects/net.JPG',
             'link': 'https://havesomemovies.netlify.app/?fbclid=IwAR1NxYMgHKLDX7DU7Hs3bIVy6HOL7WeyrPtP-ks2y2xzFR1ZBnCcL4F4CwA',
+            'gitLink': 'https://github.com/SamQueen/movie-app',
             'techStack': ['react', 'javascript', 'rest', 'git'],
-            'side': 'left'
+            'side': 'right'
         },
         {
             'title': 'React Flexible Slide',
             'description': 'A responsive React carousel designed for integration into my Netflix clone project, encapsulated within an npm package for versatile usage across various projects.',
             'imgPath': 'projects/npm.JPG',
             'link': 'https://www.npmjs.com/package/react-flexible-slide?activeTab=readme',
+            'gitLink': 'https://github.com/SamQueen/react-flexible-slide',
             'techStack': ['react', 'typeScript', 'git'],
-            'side': 'right'
-        },
-        {
-            'title': 'VeriLoot',
-            'description': 'An innovative local marketplace company built using React, powering its dynamic web application.',
-            'imgPath': 'projects/veriloot.JPG',
-            'link': 'https://veriloot.netlify.app/',
-            'techStack': ['react', 'javascript', 'mysql', 'git'],
             'side': 'left'
         },
     ]
@@ -57,6 +60,7 @@ function ProjectSection() {
                             link={project.link}
                             techStack={project.techStack}
                             side={project.side}
+                            gitLink={project.gitLink}
                         />
                     </div>
                 ))}                
