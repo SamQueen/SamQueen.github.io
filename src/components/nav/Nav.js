@@ -1,9 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import './nav.css';
 
 function Nav() {
-    const ref = useRef(null);
     const [scroll, setScroll] = useState(true);
     const [scroll2, setScroll2] = useState(true);
     const [navGrow, setNavGrow] = useState(false);
@@ -82,7 +81,7 @@ function Nav() {
                 <li onClick={scrollToView}> HOME </li>
                 <li onClick={scrollToView}> ABOUT </li>
                 <li onClick={scrollToView}> PROJECTS </li>
-                <li onClick={scrollToView}><a> RESUME </a></li>
+                <li onClick={scrollToView}> RESUME </li>
                 <li onClick={scrollToView}>CONTACT </li>
             </ul>
 

@@ -1,11 +1,10 @@
-import { motion } from 'framer-motion';
 import ProjectItem from '../util/ProjectItem';
 import './projectSection.css';
 
 
 function ProjectSection() {
 
-    const openPictureThis = () => {
+    /* const openPictureThis = () => {
         window.open('https://picturethisapp.netlify.app/', '_blank');
     }
     const openBubble = () => {
@@ -13,9 +12,18 @@ function ProjectSection() {
     }
     const openVeriloot = () => {
         window.open('https://veriloot.netlify.app/', '_blank');
-    }
+    } */
 
     const projects = [
+        {
+            'title': 'Startup 3',
+            'description': ' A fully responsive web application developed based on the provided Figma design, ensuring seamless user experience and pixel-perfect implementation. The project includes attention to detail in translating the design into functional code, with optimized performance and cross-browser compatibility.',
+            'imgPath': 'projects/figma.JPG',
+            'link': 'https://figmapractice22.netlify.app/',
+            'gitLink': 'https://github.com/SamQueen/figma-practice',
+            'techStack': ['react', 'tailwind', 'typescript',],
+            'side': 'left'
+        },
         {
             'title': 'Picture Perfect',
             'description': 'An Instagram-inspired CRUD application enabling users to log in, share photos, comment on posts, and personalize their profiles.',
@@ -23,7 +31,7 @@ function ProjectSection() {
             'link': 'https://www.pictureper.com/',
             'gitLink': 'https://github.com/SamQueen/Picture-Perfect-Client',
             'techStack': ['react', 'next', 'tailwind', 'typescript', 'mysql', 'node'],
-            'side': 'left'
+            'side': 'right'
         },
         {
             'title': 'Netflix Clone',
@@ -32,7 +40,7 @@ function ProjectSection() {
             'link': 'https://havesomemovies.netlify.app/?fbclid=IwAR1NxYMgHKLDX7DU7Hs3bIVy6HOL7WeyrPtP-ks2y2xzFR1ZBnCcL4F4CwA',
             'gitLink': 'https://github.com/SamQueen/movie-app',
             'techStack': ['react', 'javascript', 'rest', 'git'],
-            'side': 'right'
+            'side': 'left'
         },
         {
             'title': 'React Flexible Slide',
@@ -41,7 +49,7 @@ function ProjectSection() {
             'link': 'https://www.npmjs.com/package/react-flexible-slide?activeTab=readme',
             'gitLink': 'https://github.com/SamQueen/react-flexible-slide',
             'techStack': ['react', 'typeScript', 'git'],
-            'side': 'left'
+            'side': 'right'
         },
     ]
 

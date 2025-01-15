@@ -17,7 +17,7 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack, gitLin
                     whileInView={{x: "0", opacity: 1}}
                     viewport={{ once: true, amount: 0.8}}
                 >
-                    <img className='project-img' src={imgPath}></img>
+                    <img className='project-img' src={imgPath} alt=""></img>
                 </motion.div>
 
                 <motion.div 
@@ -27,12 +27,12 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack, gitLin
                     viewport={{ once: true, amount: 0.8}}
                 >
                     <h3>{title}</h3>
-                    <img id="mobile-project-img" src={imgPath}></img>
+                    <img id="mobile-project-img" src={imgPath} alt=""></img>
                     <p>{description}</p>
 
                     <ul className="project-tech-stack">
                         {techStack.map((item, i) => (
-                            <li key={i}><img src={`./tech/${item}.png`}></img></li>
+                            <li key={i}><img src={`./tech/${item}.png`} alt=""></img></li>
                         ))}          
                     </ul>
 
@@ -52,12 +52,12 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack, gitLin
                 viewport={{ once: true, amount: 0.8}}
             >
                 <h3>{title}</h3>
-                <img id="mobile-project-img" src={imgPath}></img>
+                <img id="mobile-project-img" src={imgPath} alt=""></img>
                 <p>{description}</p>
 
                 <ul className="project-tech-stack">
                     {techStack.map((item, i) => (
-                        <li key={i}><img src={`./tech/${item}.png`}></img></li>
+                        <li key={i}><img src={`./tech/${item}.png`} alt=""></img></li>
                     ))}          
                 </ul>
 
@@ -71,7 +71,7 @@ const ProjectItem = ({imgPath, link, side, title, description, techStack, gitLin
                 whileInView={{x: "0", opacity: 1}}
                 viewport={{ once: true, amount: 0.8}}
             >
-                <img className='project-img' src={imgPath}></img>
+                <img className='project-img' src={imgPath} alt=""></img>
             </motion.div>
         </div>
     )

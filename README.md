@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run deplay`
+
+publish everything from your dist folder to your gh-pages branch
+
 ### `npm start`
 
 Runs the app in the development mode.\

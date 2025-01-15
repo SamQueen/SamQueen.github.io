@@ -31,7 +31,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.5 }}
                 >
-                    <img src={'tech/react.png'} />
+                    <img src={'tech/react.png'} alt=""/>
                     <p>React</p>
                 </motion.div>
 
@@ -42,7 +42,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.7 }}
                 >
-                    <img src={'tech/vite.png'} />
+                    <img src={'tech/vite.png'} alt="" />
                     <p>Vite</p>
                 </motion.div>
 
@@ -53,7 +53,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/next.png'} />
+                    <img src={'tech/next.png'} alt=""/>
                     <p>Next.js</p>
                 </motion.div>
 
@@ -64,7 +64,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 1.1 }}
                 >
-                    <img src={'tech/typeScript.png'} />
+                    <img src={'tech/typeScript.png'} alt="" />
                     <p>Typescript</p>
                 </motion.div>
 
@@ -75,7 +75,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/tailwind.png'} />
+                    <img src={'tech/tailwind.png'} alt="" />
                     <p>Tailwind</p>
                 </motion.div>
 
@@ -86,7 +86,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/node.png'} />
+                    <img src={'tech/node.png'} alt="" />
                     <p>Node.js</p>
                 </motion.div>
 
@@ -97,7 +97,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/express.png'} />
+                    <img src={'tech/express.png'} alt="" />
                     <p>Express</p>
                 </motion.div>
 
@@ -108,7 +108,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/mysql.png'} />
+                    <img src={'tech/mysql.png'} alt="" />
                     <p>MySQL</p>
                 </motion.div>
 
@@ -119,7 +119,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/c.png'} />
+                    <img src={'tech/c.png'} alt="" />
                     <p>C++</p>
                     </motion.div>
 
@@ -130,7 +130,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/java.png'} />
+                    <img src={'tech/java.png'} alt="" />
                     <p>java</p>
                 </motion.div>
 
@@ -141,7 +141,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/python.png'} />
+                    <img src={'tech/python.png'} alt="" />
                     <p>python</p>
                 </motion.div>
 
@@ -152,7 +152,7 @@ function AboutSection() {
                     viewport={{ once: true, amount: 0.8}}
                     transition={{ duration: 0.9 }}
                 >
-                    <img src={'tech/git.png'} />
+                    <img src={'tech/git.png'} alt="" />
                     <p>Git</p>
                 </motion.div>
 
